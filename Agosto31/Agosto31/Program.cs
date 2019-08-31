@@ -21,8 +21,13 @@ namespace Agosto31
 {
   class Program
   {
+    // campos
+    static int campo=20;
+
+
     static void Main(string[] args)
     {
+      Debug.WriteLine("el campo es "+campo);
       // primitivo
       int n1=20;
       string texto ="hola";
@@ -62,8 +67,21 @@ namespace Agosto31
 
       numero6 = numero5;
 
+      // variable definidia por una clase
+      // objeto
+      Producto prod=new Producto();
+      prod.campo=20;
+      int total=prod.Sumar(1,2);
 
+      // variable como objeto
+      ProductoModelo cocacola = new ProductoModelo();
+      cocacola.Nombre="Cocacola";
+      cocacola.Precio=200;
 
+      ProductoServicio servicio=new ProductoServicio();
+
+      Debug.WriteLine("----------------");
+      servicio.Mostrar(cocacola);
 
     } // muere n1
   }

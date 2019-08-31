@@ -6,12 +6,19 @@ using System.Threading.Tasks;
 
 namespace Agosto31
 {
-  // clase de modelo
-  /* sdsddsdssd sd
-   *
-  */
+  // Clase de Dominio (de negocio)
+  // campos + funciones
+
   class Producto
   {
+      // campo
+      public int campo=100;
 
+      // funcion
+
+      public int Sumar(int n1,int n2)
+      {
+        return n1+n2;
+      }
   }
 }
